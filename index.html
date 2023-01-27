@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/>
+    <title> Notepad++的灵堂</title>
+  </head>
+  <body class="mdui-color-black">
+  <body class="mdui-theme-layout-dark">
+    <center><h1><big>Notepad++的灵堂</big></h1></center>
+    <center><div class="mdui-color-light-blue-800">Notepad++作者侯今吾何许人也?</div></center>
+    <center><div class="mdui-color-light-blue-800">中华人民共和国台湾省一低能弱智人士也，开源社区败类，代表作：粪坑Notepad++ <del>并不幸身亡</del><strong><font color=red>好似！开香槟咯！</font></strong>。</div></center>
+    <br>
+    <center><img src="https://s1.ax1x.com/2023/01/27/pSU8ql6.png" width="500px" height="300px"></center>
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <center><div>Notepad++遗照</div></center>
+    <br>
+    <center><div>虽然侯**去世了，但是我们仍然会唾弃他</div></center>
+    <center><div>快来吐口水，并且积累功德!</div></center>
+    <br>
+    <center><div><button id="click-btn" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" onclick="playAudio()">点按敲击</button>
+        <p>已经吐了<span id="number">0</span>次</p></center>
+    </div>
+    <script>
+        var number = parseInt(localStorage.getItem('number')) || 0; 
+        document.getElementById('number').innerText = number;
+        document.getElementById('click-btn').addEventListener('click',function() {
+            number +=1;
+            localStorage.setItem('number', number);
+            document.getElementById('number').innerText = number
+        });
+    </script>
+    <footer><center>敲锣打鼓给Notepad++和侯今吾下葬 With ❤ | By LandMeXPro | MDUI</center></footer>
+  </body>
+  </body>
+</html>
